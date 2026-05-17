@@ -1,0 +1,10 @@
+# Homebrew tap conventions: macOS finder noise and shell-generated junk
+# that occasionally lands in the working tree when someone (or the
+# release workflow) does manual recovery on this repo.
+.DS_Store
+*.swp
+*~
+
+# Local brew audit artifacts. brew creates these in the tap dir when
+# you run `brew audit --tap relaya-ai/tap`.
+*.audit
