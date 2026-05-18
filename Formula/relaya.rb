@@ -5,21 +5,21 @@
 class Relaya < Formula
   desc "Relaya CLI — Claude Code / Codex / Gemini CLI integration + MCP server"
   homepage "https://relaya.pro"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/relaya-ai/relaya-ai/releases/download/v0.1.8/relaya_darwin_amd64.tar.gz"
-      sha256 "cd641542d0dda1d873046a527c47488670d7f7182110fb9a768db4b2aef6df89"
+      url "https://github.com/relaya-ai/relaya-ai/releases/download/v0.1.9/relaya_darwin_amd64.tar.gz"
+      sha256 "fa1b79bafa9c3a51adf92d9db6e8f5927eeea50e53f7c37351c74386c54644a2"
 
       define_method(:install) do
         bin.install "relaya"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/relaya-ai/relaya-ai/releases/download/v0.1.8/relaya_darwin_arm64.tar.gz"
-      sha256 "71020abe6c250786ff854e694fe49937e5ad69e738bf3009fc540dffae361905"
+      url "https://github.com/relaya-ai/relaya-ai/releases/download/v0.1.9/relaya_darwin_arm64.tar.gz"
+      sha256 "fe6c6772674079ec936e7074d56d3187b4dad9485ad5bf106aeb323ca70d1d50"
 
       define_method(:install) do
         bin.install "relaya"
@@ -29,15 +29,15 @@ class Relaya < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/relaya-ai/relaya-ai/releases/download/v0.1.8/relaya_linux_amd64.tar.gz"
-      sha256 "8ea5b2cf39b19874a6dafd6582108f86308686bb9b71f01a9e622dd2af2a63f2"
+      url "https://github.com/relaya-ai/relaya-ai/releases/download/v0.1.9/relaya_linux_amd64.tar.gz"
+      sha256 "c12340136ff35737e63576c75529ffa97104ac46f8fbf5d8dcf95611a5d234f6"
       define_method(:install) do
         bin.install "relaya"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/relaya-ai/relaya-ai/releases/download/v0.1.8/relaya_linux_arm64.tar.gz"
-      sha256 "a209a4edeccb15820adede264d10ae7c2e23a7e3d2a6142d48deac89074d43c4"
+      url "https://github.com/relaya-ai/relaya-ai/releases/download/v0.1.9/relaya_linux_arm64.tar.gz"
+      sha256 "d07b4011bfdb2feaaa3520916f5cb3755f7c21a976cd2aa7f34186f537a9fc19"
       define_method(:install) do
         bin.install "relaya"
       end
