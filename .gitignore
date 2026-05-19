@@ -6,5 +6,5 @@
 *~
 
 # Local brew audit artifacts. brew creates these in the tap dir when
-# you run `brew audit --tap relaya-ai/tap`.
+# you run `brew audit --tap everyapi-ai/tap`.
 *.audit
