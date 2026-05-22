@@ -5,21 +5,21 @@
 class Everyapi < Formula
   desc "EveryAPI CLI — Claude Code / Codex / Gemini CLI integration + MCP server"
   homepage "https://everyapi.ai"
-  version "0.1.27"
+  version "0.1.28"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/everyapi-ai/everyapi-ai/releases/download/v0.1.27/everyapi_darwin_amd64.tar.gz"
-      sha256 "6804e436a7b52d9677870ba7a2e190fde6aca8f9139570a8321054e9cb2f898a"
+      url "https://github.com/everyapi-ai/everyapi-ai/releases/download/v0.1.28/everyapi_darwin_amd64.tar.gz"
+      sha256 "b765384550715761d2b27d12cf8a3779699e7d2172e56f99af437123201ab4b9"
 
       define_method(:install) do
         bin.install "everyapi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/everyapi-ai/everyapi-ai/releases/download/v0.1.27/everyapi_darwin_arm64.tar.gz"
-      sha256 "750e14bfc77d043c11ac971869f88aa97121f14e30c05745b4a6b94c1c924616"
+      url "https://github.com/everyapi-ai/everyapi-ai/releases/download/v0.1.28/everyapi_darwin_arm64.tar.gz"
+      sha256 "3dcf41fe1b1283d34821c8d15171b138fb1ace14563a5d6cc4ec8468b5b0c1b9"
 
       define_method(:install) do
         bin.install "everyapi"
@@ -29,15 +29,15 @@ class Everyapi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/everyapi-ai/everyapi-ai/releases/download/v0.1.27/everyapi_linux_amd64.tar.gz"
-      sha256 "d2fb2f0705334d252e874672cbd5fa43d0334b208356132dd500f42299ebcf5a"
+      url "https://github.com/everyapi-ai/everyapi-ai/releases/download/v0.1.28/everyapi_linux_amd64.tar.gz"
+      sha256 "daa873996dc518b274510b363a9d5aee53a8c167ec65e824ac127862ac368f27"
       define_method(:install) do
         bin.install "everyapi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/everyapi-ai/everyapi-ai/releases/download/v0.1.27/everyapi_linux_arm64.tar.gz"
-      sha256 "2c7d358fa082e3145191a03a214153f42c786aba1d567a7227ce5a497d9df4ce"
+      url "https://github.com/everyapi-ai/everyapi-ai/releases/download/v0.1.28/everyapi_linux_arm64.tar.gz"
+      sha256 "33b99db34e4baff847c3449de07da9ab4e74062f4073c9c7b911d27d4003a45f"
       define_method(:install) do
         bin.install "everyapi"
       end
